@@ -710,8 +710,45 @@ except Exception as e:
 - Bar plot comparing ensemble accuracies.
 
 ```python
-results = pd.DataFrame(...)
-sns.barplot(...)
+# Calculate accuracies
+baseline_acc = np.mean(np.array(test_labels) == np.array(test_preds))
+bagging_acc = np.mean(np.array(test_labels) == np.array(bagging_preds))
+adaboost_acc = np.mean(np.array(test_labels) == np.array(adaboost_preds))
+stacking_acc = np.mean(np.array(test_labels) == np.array(stacking_preds))
+
+# Results comparison
+results = pd.DataFrame({
+    'Model': ['Baseline', 'Bagging', 'AdaBoost', 'Stacking'],
+    'Accuracy': [baseline_acc, bagging_acc, adaboost_acc, stacking_acc]
+})
+
+plt.figure(figsize=(10,6))
+sns.barplot(x='Model', y='Accuracy', data=results, hue='Model', palette='viridis', dodge=False, legend=False)  # Updated line
+plt.ylim(0.7, 1.0)
+plt.title('Model Comparison', color='blue')  # Set color using matplotlib
+plt.show()
+
+ColorLogger.success("Final Results:")
+print(results)# Calculate accuracies
+baseline_acc = np.mean(np.array(test_labels) == np.array(test_preds))
+bagging_acc = np.mean(np.array(test_labels) == np.array(bagging_preds))
+adaboost_acc = np.mean(np.array(test_labels) == np.array(adaboost_preds))
+stacking_acc = np.mean(np.array(test_labels) == np.array(stacking_preds))
+
+# Results comparison
+results = pd.DataFrame({
+    'Model': ['Baseline', 'Bagging', 'AdaBoost', 'Stacking'],
+    'Accuracy': [baseline_acc, bagging_acc, adaboost_acc, stacking_acc]
+})
+
+plt.figure(figsize=(10,6))
+sns.barplot(x='Model', y='Accuracy', data=results, hue='Model', palette='viridis', dodge=False, legend=False)  # Updated line
+plt.ylim(0.7, 1.0)
+plt.title('Model Comparison', color='blue')  # Set color using matplotlib
+plt.show()
+
+ColorLogger.success("Final Results:")
+print(results)
 ```
 
 ---

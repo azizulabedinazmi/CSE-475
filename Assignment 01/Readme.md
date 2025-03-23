@@ -9,9 +9,9 @@
     - 🚀 Boosting (AdaBoost)
     - 🏗️ Stacking
 5. [📊 Evaluation and Comparison](#-evaluation-and-comparison)
-6. [📊 Model Comparison: With Early Stopping vs Without Early Stopping](#model-comparison-with-early-stopping-vs-without-early-stopping)
-7. [🌀 Explainability with Grad-CAM](#-explainability-with-grad-cam)
-8. [💡 Discussion on Ensemble Methods](#-discussion-on-ensemble-methods)
+6. [🌀 Explainability with Grad-CAM](#-explainability-with-grad-cam)
+7. [💡 Discussion on Ensemble Methods](#-discussion-on-ensemble-methods)
+8. [📊 Model Comparison: With Early Stopping vs Without Early Stopping](#model-comparison-with-early-stopping-vs-without-early-stopping)
 
 ---
 
@@ -751,28 +751,6 @@ ColorLogger.success("Final Results:")
 print(results)
 ```
 
----
-
-## Model Comparison: With Early Stopping vs Without Early Stopping
-
-| **With Early Stopping** | **Without Early Stopping** |
-|-------------------------|----------------------------|
-| **Training Output <br> Plots training/validation loss & accuracy over epochs.** <br> ![](img/Training%20Output_With_ES.png) | **Training Output <br> Plots training/validation loss & accuracy over epochs.** <br> ![](img/Training%20Output_Without_ES.png) |
-| **Baseline Model Performance** <br> ![](img/Baseline%20Model%20Performance_With_ES.png) | **Baseline Model Performance** <br> ![](img/Baseline%20Model%20Performance_Without_ES.png) |
-| **Baseline Model Confusion Matrix** <br> ![](img/Baseline%20Model%20Performance_Confusion%20Matrix_With_ES.png) | **Baseline Model Confusion Matrix** <br> ![](img/Baseline%20Model%20Performance_Confusion%20Matrix_Without_ES.png) |
-| **Bagging Ensemble Accuracy** <br> ![](img/Bagging%20Accuracy_With_ES.png) | **Bagging Ensemble Accuracy** <br> ![](img/Bagging%20Accuracy_Without_ES.png) |
-| **Bagging Ensemble Confusion Matrix** <br> ![](img/Bagging%20Ensemble%20Confusion%20Matrix_With_ES.png) | **Bagging Ensemble Confusion Matrix** <br> ![](img/Bagging%20Ensemble%20Confusion%20Matrix_Without_ES.png) |
-| **AdaBoost Ensemble Accuracy** <br> ![](img/AdaBoost%20Ensemble%20Accuracy_With_ES.png) | **AdaBoost Ensemble Accuracy** <br> ![](img/AdaBoost%20Ensemble%20Accuracy_Without_ES.png) |
-| **AdaBoost Ensemble Confusion Matrix** <br> ![](img/AdaBoost%20Ensemble%20Confusion%20Matrix_With_ES.png) | **AdaBoost Ensemble Confusion Matrix** <br> ![](img/AdaBoost%20Ensemble%20Confusion%20Matrix_Without_ES.png) |
-| **Stacking Ensemble Accuracy** <br> ![](img/Stacking%20Ensemble%20Accuracy_With_ES.png) | **Stacking Ensemble Accuracy** <br> ![](img/Stacking%20Ensemble%20Accuracy_Without_ES.png) |
-| **Stacking Ensemble Confusion Matrix** <br> ![](img/Stacking%20Ensemble%20Confusion%20Matrix_With_ES.png) | **Stacking Ensemble Confusion Matrix** <br> ![](img/Stacking%20Ensemble%20Confusion%20Matrix_Without_ES.png) |
-| **Model Comparison** <br> ![](img/Model%20Comparison_With_ES.png) | **Model Comparison** <br> ![](img/Model%20Comparison_Without_ES.png) |
-| **Grad-CAM Visualization 1** <br> ![](img/Grad-CAM%20Visualization%201_With_ES.png) | **Grad-CAM Visualization 1** <br> ![](img/Grad-CAM%20Visualization%201_Without_ES.png) |
-| **Grad-CAM Visualization 2** <br> ![](img/Grad-CAM%20Visualization%202_With_ES.png) | **Grad-CAM Visualization 2** <br> ![](img/Grad-CAM%20Visualization%202_Without_ES.png) |
-| **Grad-CAM Visualization 3** <br> ![](img/Grad-CAM%20Visualization%203_With_ES.png) | **Grad-CAM Visualization 3** <br> ![](img/Grad-CAM%20Visualization%203_Without_ES.png) |
-
----
-
 ## 🌀 Explainability with Grad-CAM
 
 ### 🔍 Grad-CAM Visualization
@@ -869,6 +847,48 @@ visualize_gradcam(img_path, stacking, models_list)
 - 🚀 **Boosting**: Sequentially corrects errors.
 - 🏗️ **Stacking**: Combines diverse models for maximum performance.
 - 🔍 **Grad-CAM**: Explains "where the model looks" in an image.
+
+---
+
+---
+
+## Model Comparison: With Early Stopping vs Without Early Stopping
+
+| **With Early Stopping** | **Without Early Stopping** |
+|-------------------------|----------------------------|
+| **Training Output <br> Plots training/validation loss & accuracy over epochs.** <br> ![](img/Training%20Output_With_ES.png) | **Training Output <br> Plots training/validation loss & accuracy over epochs.** <br> ![](img/Training%20Output_Without_ES.png) |
+| **Baseline Model Performance** <br> ![](img/Baseline%20Model%20Performance_With_ES.png) | **Baseline Model Performance** <br> ![](img/Baseline%20Model%20Performance_Without_ES.png) |
+| **Baseline Model Confusion Matrix** <br> ![](img/Baseline%20Model%20Performance_Confusion%20Matrix_With_ES.png) | **Baseline Model Confusion Matrix** <br> ![](img/Baseline%20Model%20Performance_Confusion%20Matrix_Without_ES.png) |
+| **Bagging Ensemble Accuracy** <br> ![](img/Bagging%20Accuracy_With_ES.png) | **Bagging Ensemble Accuracy** <br> ![](img/Bagging%20Accuracy_Without_ES.png) |
+| **Bagging Ensemble Confusion Matrix** <br> ![](img/Bagging%20Ensemble%20Confusion%20Matrix_With_ES.png) | **Bagging Ensemble Confusion Matrix** <br> ![](img/Bagging%20Ensemble%20Confusion%20Matrix_Without_ES.png) |
+| **AdaBoost Ensemble Accuracy** <br> ![](img/AdaBoost%20Ensemble%20Accuracy_With_ES.png) | **AdaBoost Ensemble Accuracy** <br> ![](img/AdaBoost%20Ensemble%20Accuracy_Without_ES.png) |
+| **AdaBoost Ensemble Confusion Matrix** <br> ![](img/AdaBoost%20Ensemble%20Confusion%20Matrix_With_ES.png) | **AdaBoost Ensemble Confusion Matrix** <br> ![](img/AdaBoost%20Ensemble%20Confusion%20Matrix_Without_ES.png) |
+| **Stacking Ensemble Accuracy** <br> ![](img/Stacking%20Ensemble%20Accuracy_With_ES.png) | **Stacking Ensemble Accuracy** <br> ![](img/Stacking%20Ensemble%20Accuracy_Without_ES.png) |
+| **Stacking Ensemble Confusion Matrix** <br> ![](img/Stacking%20Ensemble%20Confusion%20Matrix_With_ES.png) | **Stacking Ensemble Confusion Matrix** <br> ![](img/Stacking%20Ensemble%20Confusion%20Matrix_Without_ES.png) |
+| **Model Comparison** <br> ![](img/Model%20Comparison_With_ES.png) | **Model Comparison** <br> ![](img/Model%20Comparison_Without_ES.png) |
+| **Grad-CAM Visualization 1** <br> ![](img/Grad-CAM%20Visualization%201_With_ES.png) | **Grad-CAM Visualization 1** <br> ![](img/Grad-CAM%20Visualization%201_Without_ES.png) |
+| **Grad-CAM Visualization 2** <br> ![](img/Grad-CAM%20Visualization%202_With_ES.png) | **Grad-CAM Visualization 2** <br> ![](img/Grad-CAM%20Visualization%202_Without_ES.png) |
+| **Grad-CAM Visualization 3** <br> ![](img/Grad-CAM%20Visualization%203_With_ES.png) | **Grad-CAM Visualization 3** <br> ![](img/Grad-CAM%20Visualization%203_Without_ES.png) |
+
+------
+
+## Model Comparison: With Early Stopping vs Without Early Stopping
+
+| **With Early Stopping** | **Without Early Stopping** |
+|-------------------------|----------------------------|
+| **Training Output <br> Plots training/validation loss & accuracy over epochs.** <br> ![](img/Training%20Output_With_ES.png) | **Training Output <br> Plots training/validation loss & accuracy over epochs.** <br> ![](img/Training%20Output_Without_ES.png) |
+| **Baseline Model Performance** <br> ![](img/Baseline%20Model%20Performance_With_ES.png) | **Baseline Model Performance** <br> ![](img/Baseline%20Model%20Performance_Without_ES.png) |
+| **Baseline Model Confusion Matrix** <br> ![](img/Baseline%20Model%20Performance_Confusion%20Matrix_With_ES.png) | **Baseline Model Confusion Matrix** <br> ![](img/Baseline%20Model%20Performance_Confusion%20Matrix_Without_ES.png) |
+| **Bagging Ensemble Accuracy** <br> ![](img/Bagging%20Accuracy_With_ES.png) | **Bagging Ensemble Accuracy** <br> ![](img/Bagging%20Accuracy_Without_ES.png) |
+| **Bagging Ensemble Confusion Matrix** <br> ![](img/Bagging%20Ensemble%20Confusion%20Matrix_With_ES.png) | **Bagging Ensemble Confusion Matrix** <br> ![](img/Bagging%20Ensemble%20Confusion%20Matrix_Without_ES.png) |
+| **AdaBoost Ensemble Accuracy** <br> ![](img/AdaBoost%20Ensemble%20Accuracy_With_ES.png) | **AdaBoost Ensemble Accuracy** <br> ![](img/AdaBoost%20Ensemble%20Accuracy_Without_ES.png) |
+| **AdaBoost Ensemble Confusion Matrix** <br> ![](img/AdaBoost%20Ensemble%20Confusion%20Matrix_With_ES.png) | **AdaBoost Ensemble Confusion Matrix** <br> ![](img/AdaBoost%20Ensemble%20Confusion%20Matrix_Without_ES.png) |
+| **Stacking Ensemble Accuracy** <br> ![](img/Stacking%20Ensemble%20Accuracy_With_ES.png) | **Stacking Ensemble Accuracy** <br> ![](img/Stacking%20Ensemble%20Accuracy_Without_ES.png) |
+| **Stacking Ensemble Confusion Matrix** <br> ![](img/Stacking%20Ensemble%20Confusion%20Matrix_With_ES.png) | **Stacking Ensemble Confusion Matrix** <br> ![](img/Stacking%20Ensemble%20Confusion%20Matrix_Without_ES.png) |
+| **Model Comparison** <br> ![](img/Model%20Comparison_With_ES.png) | **Model Comparison** <br> ![](img/Model%20Comparison_Without_ES.png) |
+| **Grad-CAM Visualization 1** <br> ![](img/Grad-CAM%20Visualization%201_With_ES.png) | **Grad-CAM Visualization 1** <br> ![](img/Grad-CAM%20Visualization%201_Without_ES.png) |
+| **Grad-CAM Visualization 2** <br> ![](img/Grad-CAM%20Visualization%202_With_ES.png) | **Grad-CAM Visualization 2** <br> ![](img/Grad-CAM%20Visualization%202_Without_ES.png) |
+| **Grad-CAM Visualization 3** <br> ![](img/Grad-CAM%20Visualization%203_With_ES.png) | **Grad-CAM Visualization 3** <br> ![](img/Grad-CAM%20Visualization%203_Without_ES.png) |
 
 ---
 

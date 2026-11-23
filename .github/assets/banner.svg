@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fef3c7"/><stop offset="1" stop-color="#fde68a"/></linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4d7c0f"/><stop offset="1" stop-color="#166534"/></linearGradient>
+    <style>.flow{stroke-dasharray:6 8;animation:f 1.2s linear infinite}@keyframes f{to{stroke-dashoffset:-14}}
+      .vote{animation:v 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}@keyframes v{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}</style>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <circle cx="1140" cy="300" r="140" fill="#fbbf24" opacity=".3"/>
+  <!-- leaf input -->
+  <g transform="translate(640 160) rotate(-25)">
+    <path d="M-80 0C-40-50 40-50 80 0C40 50-40 50-80 0z" fill="url(#leaf)"/>
+    <path d="M-80 0H80M-40 0l20-18M-40 0l20 18M0 0l20-20M0 0l20 20M40 0l14-12M40 0l14 12" stroke="#bef264" stroke-width="2" fill="none"/>
+    <ellipse cx="10" cy="-10" rx="22" ry="14" fill="#ef4444" opacity=".35"/>
+  </g>
+  <!-- ensemble -->
+  <g font-family="Consolas, Menlo, monospace" font-size="14" font-weight="700">
+    <path class="flow" d="M730 140L820 70M735 160H820M730 180L820 250" stroke="#92400e" stroke-width="2" fill="none"/>
+    <rect x="820" y="48" width="140" height="44" rx="10" fill="#166534"/><text x="890" y="76" text-anchor="middle" fill="#ecfccb">Bagging</text>
+    <rect x="820" y="138" width="140" height="44" rx="10" fill="#ca8a04"/><text x="890" y="166" text-anchor="middle" fill="#fffbeb">AdaBoost</text>
+    <rect x="820" y="228" width="140" height="44" rx="10" fill="#9a3412"/><text x="890" y="256" text-anchor="middle" fill="#ffedd5">Stacking</text>
+    <path class="flow" d="M960 70L1040 150M960 160H1040M960 250L1040 170" stroke="#92400e" stroke-width="2" fill="none"/>
+    <circle class="vote" cx="1080" cy="160" r="40" fill="#14532d"/>
+    <text x="1080" y="156" text-anchor="middle" fill="#fef3c7" font-size="12">vote</text><text x="1080" y="174" text-anchor="middle" fill="#bef264" font-size="13">class ✓</text>
+  </g>
+  <text x="62" y="86" font-family="Consolas, Menlo, monospace" font-size="17" fill="#92400e" letter-spacing="3">CSE475 · MACHINE LEARNING</text>
+  <text x="58" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#14532d">Mango Leaf</text>
+  <text x="58" y="206" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-style="italic" fill="#a16207">Classification</text>
+  <text x="62" y="252" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#78350f">CNN baseline · ensemble methods · Grad-CAM · early stopping</text>
+</svg>
